@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/QTTODO">
+        <file>tomato_Icon~1.ico</file>
+    </qresource>
+</RCC>

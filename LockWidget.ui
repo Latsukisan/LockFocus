@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LockWidgetClass</class>
+ <widget class="QWidget" name="LockWidgetClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>746</width>
+    <height>503</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>锁机窗口</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="QTTODO.qrc">
+    <normaloff>:/QTTODO/tomato_Icon~1.ico</normaloff>:/QTTODO/tomato_Icon~1.ico</iconset>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="frameShape">
+      <enum>QFrame::Shape::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,2">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>剩余时间：</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLCDNumber" name="timeLCD"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="frame_2">
+     <property name="frameShape">
+      <enum>QFrame::Shape::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Raised</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QPushButton" name="whiteexeButton">
+        <property name="text">
+         <string>启动白名单应用</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="pauseButton">
+        <property name="text">
+         <string>暂停2分钟（限一次）</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QComboBox" name="appCbox"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QPushButton" name="skipButton">
+        <property name="text">
+         <string>紧急情况下的跳过番茄</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="QTTODO.qrc"/>
+ </resources>
+ <connections/>
+</ui>
